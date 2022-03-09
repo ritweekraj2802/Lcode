@@ -4,22 +4,22 @@ You must implement a solution with a linear runtime complexity and use only cons
 
  
 
-Example 1:
+Example 1:<br>
 
-Input: nums = [2,2,1]
-Output: 1
-Example 2:
+Input: nums = [2,2,1]<br>
+Output: 1<br>
+Example 2:<br>
 
-Input: nums = [4,1,2,1,2]
-Output: 4
-Example 3:
+Input: nums = [4,1,2,1,2]<br>
+Output: 4<br>
+Example 3:<br>
 
-Input: nums = [1]
-Output: 1
+Input: nums = [1]<br>
+Output: 1<br>
  
 
-Constraints:
+Constraints:<br>
 
-1 <= nums.length <= 3 * 104
--3 * 104 <= nums[i] <= 3 * 104
+1 <= nums.length <= 3 * 10^4<br>
+-3 * 10^4 <= nums[i] <= 3 * 10^4<br>
 Each element in the array appears twice except for one element which appears only once.
