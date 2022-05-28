@@ -59,7 +59,7 @@ class Solution
     
         long[] left=Arrays.copyOfRange(arr,l,m+1);
         long[] right=Arrays.copyOfRange(arr,m+1,r+1);
-        
+        int n1=m-l+1;
         long res=0 ;
         int i=0,j=0,k=l;
         while(i<left.length && j<right.length){
@@ -67,7 +67,7 @@ class Solution
                 {arr[k++]=left[i++];}
             else{
                 arr[k++]=right[j++];
-                res=res+(m+1)-(l+i);
+                res=res+n1-i;
             }
         }
         while(i<left.length)
