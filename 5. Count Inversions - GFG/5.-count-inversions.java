@@ -57,9 +57,16 @@ class Solution
     static long countAndMerge(long arr[], int l, int m, int r)
     {
     
+        int n1=m-l+1, n2=r-m;
+        long[] left=new long[n1];long[] right=new long[n2];
+        for(int i=0;i<n1;i++)
+            left[i]=arr[i+l];
+        for(int j=0;j<n2;j++)
+            right[j]=arr[m+1+j]; 
+        /*    
         long[] left=Arrays.copyOfRange(arr,l,m+1);
         long[] right=Arrays.copyOfRange(arr,m+1,r+1);
-        int n1=m-l+1;
+        int n1=m-l+1;*/
         long res=0 ;
         int i=0,j=0,k=l;
         while(i<left.length && j<right.length){
