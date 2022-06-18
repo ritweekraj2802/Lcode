@@ -43,7 +43,7 @@ class Solution
         }
         while(s.isEmpty()==false){
             tp=s.peek();s.pop();
-            curr=((long)arr[tp])* (s.isEmpty() ? n : n - s.peek() - 1);
+            curr=arr[tp]* (s.isEmpty() ? n : n - s.peek() - 1);
             res=Math.max(res,curr);
         }
         
